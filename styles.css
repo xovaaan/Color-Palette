@@ -1,0 +1,85 @@
+.container {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .color {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+    /* Added blurred border effect */
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .color-name {
+    font-size: 14px;
+    color: black;
+    text-shadow: 0 0 1px black;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(2px);
+  }
+  
+  .popup-message {
+    background-color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+  }
+  
+  .color-details {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #selectedColorName,
+  #selectedColorCode {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .color {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .color {
+      width: calc(100% - 20px);
+    }
+  
+    .popup-message {
+      width: 90%;
+      max-width: 300px;
+    }
+  }
+  
