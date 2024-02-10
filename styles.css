@@ -4,6 +4,7 @@
     width: 700px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
   }
 
   body{
@@ -18,10 +19,16 @@
     justify-content: space-between;
     gap: 15px;
   }
+
+  h1{
+    background: linear-gradient(to right, #87CEEB, #FF69B4);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
   
   .color {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     margin: 0;
     padding: 10px;
     cursor: pointer;
@@ -40,6 +47,43 @@
     color: black;
     text-shadow: 0 0 1px black;
   }
+
+  .para-2{
+    position: absolute;
+    top: 140px;
+    text-align: center;
+    font-size: 80px;
+    line-height: 140px;
+    background: linear-gradient(to right, #87CEEB, #FF69B4);
+    -webkit-background-clip: text;
+    color: transparent;
+    right: 170px;
+  }
+
+  .para{
+    font-size: 17px;
+    font-weight: 700px;
+    color: aliceblue;
+  }
+
+  .logo{
+    width: 50px;
+    position: absolute;
+    left: 230px;
+    top: 30px;
+  }
+
+  .paragraph{
+    position: absolute;
+    left: 200px;
+    top: 140px;
+    text-align: center;
+    font-size: 80px;
+    line-height: 140px;
+    background: linear-gradient(to right, #87CEEB, #FF69B4);
+    -webkit-background-clip: text;
+    color: transparent;
+}
   
   .popup {
     position: fixed;
@@ -72,7 +116,11 @@
   #selectedColorName,
   #selectedColorCode {
     font-size: 18px;
+    font-weight: 700;
     margin: 5px 0;
+    background: linear-gradient(to right, #87CEEB, #FF69B4);
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   @media only screen and (max-width: 768px) {

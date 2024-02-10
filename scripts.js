@@ -110,12 +110,12 @@ const colorsData = [
       });
   
       // Update color details below the color cards
-      colorDetailsName.textContent = `Selected Color: ${color.name}`;
-      colorDetailsCode.textContent = `Color Code: ${color.rgba}`;
+      colorDetailsName.textContent = `Selected Color : ${color.name}`;
+      colorDetailsCode.textContent = `Color Code : ${color.rgba}`;
     });
   
     colorsContainer.appendChild(colorCard);
   });
   
-  // Additional styles and functionality for the color details section
+
   
